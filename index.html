@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather</title>
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="logo-navbar">
+                <a class="navbar-brand" href="#"><img src="images/logo (1).png" alt=""><span class="logo-text ms-2 text-white fw-bolder">Weather</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white pe-4" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pe-4" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pe-4" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pe-4" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="site-content">
+        <div class="background"></div>
+        <div class="search container d-flex justify-content-center">
+            <form class="d-flex w-50" role="search">
+                <input id="searchBar" class="form-control me-2 form-control-lg rounded-pill" type="text" placeholder="Find Your Place">
+            </form>
+        </div>
+    </section>
+
+    <section class="fullTable">
+        <div class="table text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="header d-flex justify-content-around">
+                            <p id="today" class="fw-bolder"></p>
+                            <p id="todayDate" class="fw-bolder"></p>
+                        </div>
+                        <div class="location text-center my-4">
+                            <h3 id="location" class="fw-bolder"></h3>
+                        </div>
+                        <div class="d-flex justify-content-around my-5">
+                            <div class="Degree">
+                                <h2 id="todayDegree" class="d-inline-block fw-bolder"></h2><h2 class="d-inline-block fw-bolder pt-3"><sup>o</sup>C</h2>
+                            </div>
+                            <img id="todayIcon" width="70"/>
+                        </div>
+                        <div class="Custom text-center pb-3">
+                            <p id="todayCustom" class="lead fw-bolder"></p>
+                        </div>
+                        <div class="icons text-center">
+                            <i class="fas fa-umbrella pr-1"></i>
+                            <span id="humidity" class="fw-bold"></span><span class="pe-4 fw-bold">%</span>
+
+                            <i class="fas fa-wind pl-3 pr-1"></i>
+                            <span id="wind" class="fw-bold"></span> <span class="pe-4 fw-bold">km/h</span>
+
+                            <i class="far fa-compass pl-3 pr-1"></i>
+                            <span id="compass" class="fw-bold"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 middle">
+                        <div class="header text-center">
+                            <p class="nextDay fw-bolder"></p>
+                        </div>
+                        <div class="details text-center pt-3">
+                            <div class="nextDay-Icon pb-2">
+                                <img class="nextDayIcon" width="70"/>
+                            </div>
+                            <h2 class="nextDayMaxDegree d-inline-block fw-bolder"></h2><h2 class="d-inline-block fw-bolder pt-3"><sup>o</sup>C</h2>
+                            <br>
+                            <h6 class="nextDayMinDegree d-inline-block fw-bolder""></h6><h6 class="d-inline-block fw-bolder pt-3"><sup>o</sup>C</h6>
+                            <p class="nextDayCustom lead fw-bolder pt-5"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="header text-center">
+                            <p class="nextDay fw-bolder"></p>
+                        </div>
+                        <div class="details text-center pt-3">
+                            <div class="nextDay-Icon pb-3">
+                                <img class="nextDayIcon" width="70"/>
+                            </div>
+                            <h2 class="nextDayMaxDegree d-inline-block fw-bolder"></h2><h2 class="d-inline-block fw-bolder pt-3"><sup>o</sup>C</h2>
+                            <br>
+                            <h6 class="nextDayMinDegree d-inline-block fw-bolder""></h6><h6 class="d-inline-block fw-bolder pt-3"><sup>o</sup>C</h6>
+                            <p class="nextDayCustom lead fw-bolder pt-5"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="end">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="subscribe mt-5">
+                        <form class="d-flex w-100" role="search">
+                            <input class="form-control me-2 form-control-lg rounded-pill" type="text" placeholder="Enter Your e-mail">
+                            <button class="btn btn-outline-dark rounded-pill" type="submit"><a href="">Subscribe</a></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="social-links mt-5 d-flex justify-content-center align-items-center">
+                        <a class="me-3" href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="me-3" href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a class="me-3" href="#">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="copyrights d-flex justify-content-center mt-5">
+                    <h6>Copyright 2014 Company name. Designed by Themezy. All rights reserved</h6>
+                </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

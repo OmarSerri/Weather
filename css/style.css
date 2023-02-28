@@ -1,0 +1,140 @@
+body
+{
+    font-family: 'segoe ui light';
+    background-color: rgb(30, 32, 43);
+}
+
+.navbar
+{
+    height: 130px;
+    background-color: rgb(30, 32, 43);
+}
+
+.logo-navbar .logo-text
+{
+    position: absolute;
+    top: 52px;
+}
+
+.site-content
+{
+    position: relative;
+}
+
+.site-content .background
+{
+    background-image: url(../images/banner.png);
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.site-content .search
+{
+    position: absolute;
+    top: 80px;
+    right: 300px;
+}
+
+.site-content .search form
+{
+    position: relative;
+}
+
+.site-content .search input
+{
+    background-color: rgba(248, 247, 247, 0.479);
+    border: none;
+}
+
+.fullTable
+{
+    position: absolute;
+    top: 340px;
+    left: 0;
+    right: 0;
+}
+
+.table .container
+{
+    background: #323544;
+    border-radius: 5px;
+}
+
+.table .container .middle
+{
+        background-color: #262936;
+}
+
+.end
+{
+    margin-top: 230px;
+    background-color: rgb(38, 41, 54);
+    height: 22vh;
+    color: white;
+}
+
+.end .subscribe
+{
+    position: relative;
+}
+
+.end .subscribe input
+{
+    background-color: rgba(255, 255, 255, 0.363);
+    border: none;
+}
+
+.end .subscribe button
+{
+    position: absolute;
+    top: 5px;
+    right:13px;
+    width: 90px;
+}
+
+.end .subscribe button a
+{
+    text-decoration: none;
+    color:white
+}
+
+.social-links
+{
+    height: 50px;
+}
+
+.social-links a 
+{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(30, 32, 43);
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    transition: 0.3s ease;
+    font-size: 20px;
+}
+
+.social-links a:hover 
+{
+    background-color: #009ad8;
+}
+
+.social-links .fa-brands:hover
+{
+    color: white;
+}
+
+.social-links .fa-brands
+{
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
